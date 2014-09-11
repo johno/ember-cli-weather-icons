@@ -3,6 +3,13 @@
 An [ember-cli](http://ember-cli.com) addon for
 [Erik Flowers' weather icons](https://github.com/erikflowers/weather-icons).
 
+## Disclaimer
+
+Currently, the only weather-icon version available on Bower is `0.0.1`. As
+a result, there have been a few path tweaks to play nicely with the outdated
+version. Once a new version hits Bower, these changes will be reverted, and
+only the latest version of weather-icons will work with this addon.
+
 ## Installation
 
 First, you must install weather-icons with [bower](http://bower.io):
@@ -20,7 +27,7 @@ $ npm install --save ember-cli-weather-icons
 ## Usage
 
 ```hbs
-{{weather-icon 'sunny'}}
+{{weather-icon this.weather}}
 ```
 
 ## License
