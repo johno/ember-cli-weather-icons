@@ -1,17 +1,22 @@
 'use strict';
 
+var path = require('path');
+
 module.exports = {
   name: 'ember-cli-weather-icons',
 
-  included: function included(app) {
-    this.app = app;
+  blueprintsPath: function() {
+    return path.join(__dirname, 'blueprints');
+  },
+
+  included: function(app) {
     this._super.included(app);
 
-    app.import("bower_components/weather-icons/css/weather-icons.css");
-    app.import("bower_components/weather-icons/font/weathericons-regular-webfont.eot",  { destDir: "font" });
-    app.import("bower_components/weather-icons/font/weathericons-regular-webfont.svg",  { destDir: "font" });
-    app.import("bower_components/weather-icons/font/weathericons-regular-webfont.ttf",  { destDir: "font" });
-    app.import("bower_components/weather-icons/font/weathericons-regular-webfont.woff", { destDir: "font" });
-//  app.import("bower_components/weather-icons/font/WeatherIcons-Regular.otf",          { destDir: "fonts" });
+    this.app.import(app.bowerDirectory + '/weather-icons/css/weather-icons.css');
+    this.app.import(app.bowerDirectory + '/weather-icons/fonts/weathericons-regular-webfont.eot',  { destDir: 'fonts' });
+    this.app.import(app.bowerDirectory + '/weather-icons/fonts/weathericons-regular-webfont.svg',  { destDir: 'fonts' });
+    this.app.import(app.bowerDirectory + '/weather-icons/fonts/weathericons-regular-webfont.ttf',  { destDir: 'fonts' });
+    this.app.import(app.bowerDirectory + '/weather-icons/fonts/weathericons-regular-webfont.woff', { destDir: 'fonts' });
+    this.app.import(app.bowerDirectory + '/weather-icons/fonts/WeatherIcons-Regular.otf', { destDir: 'fonts' });
   }
 };
