@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-weather-icons",
   "description": "Ember addon for weather icons in Ember apps. Integrates with ember-cli.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "directories": {
     "doc": "doc",
     "test": "tests"

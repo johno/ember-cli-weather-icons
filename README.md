@@ -25,6 +25,12 @@ $ npm install --save ember-cli-weather-icons
 {{weather-icon this.weather}}
 ```
 
+Or, use the shortcut:
+
+```hbs
+{{w-i this.weather}}
+```
+
 ## License
 
 MIT
