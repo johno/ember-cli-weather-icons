@@ -7,16 +7,9 @@ An [ember-cli](http://ember-cli.com) addon for
 
 ## Installation
 
-First, you must install weather-icons with [bower](http://bower.io):
-
 ```
-$ bower install --save weather-icons
-```
-
-Then, install ember-cli-weather-icons:
-
-```
-$ npm install --save ember-cli-weather-icons
+npm install --save ember-cli-weather-icons
+ember g ember-cli-weather-icons
 ```
 
 ## Usage
