@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  description: 'ember-cli-weather-icons',
+  normalizeEntityName: function() {},
 
   afterInstall: function(options) {
     return this.addBowerPackageToProject('weather-icons');
