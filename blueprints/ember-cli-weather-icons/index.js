@@ -3,7 +3,7 @@
 module.exports = {
   normalizeEntityName: function() {},
 
-  afterInstall: function(options) {
-    return this.addBowerPackageToProject('weather-icons');
+  afterInstall: function() {
+    return this.addBowerPackageToProject('weather-icons', '~1.3.2');
   }
 };
