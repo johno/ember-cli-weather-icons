@@ -13,10 +13,10 @@ module.exports = {
     this._super.included(app);
 
     this.app.import(app.bowerDirectory + '/weather-icons/css/weather-icons.css');
-    this.app.import(app.bowerDirectory + '/weather-icons/fonts/weathericons-regular-webfont.eot',  { destDir: 'fonts' });
-    this.app.import(app.bowerDirectory + '/weather-icons/fonts/weathericons-regular-webfont.svg',  { destDir: 'fonts' });
-    this.app.import(app.bowerDirectory + '/weather-icons/fonts/weathericons-regular-webfont.ttf',  { destDir: 'fonts' });
-    this.app.import(app.bowerDirectory + '/weather-icons/fonts/weathericons-regular-webfont.woff', { destDir: 'fonts' });
-    this.app.import(app.bowerDirectory + '/weather-icons/fonts/WeatherIcons-Regular.otf', { destDir: 'fonts' });
+    this.app.import(app.bowerDirectory + '/weather-icons/font/weathericons-regular-webfont.eot',  { destDir: 'font' });
+    this.app.import(app.bowerDirectory + '/weather-icons/font/weathericons-regular-webfont.svg',  { destDir: 'font' });
+    this.app.import(app.bowerDirectory + '/weather-icons/font/weathericons-regular-webfont.ttf',  { destDir: 'font' });
+    this.app.import(app.bowerDirectory + '/weather-icons/font/weathericons-regular-webfont.woff', { destDir: 'font' });
+    this.app.import(app.bowerDirectory + '/weather-icons/font/WeatherIcons-Regular.otf', { destDir: 'font' });
   }
 };
