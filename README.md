@@ -1,11 +1,17 @@
-# Weather Icons
-
-[![Build Status](https://travis-ci.org/johnotander/ember-cli-weather-icons.svg?branch=master)](https://travis-ci.org/johnotander/ember-cli-weather-icons)
+# ember-cli-weather-icons [![Build Status](https://travis-ci.org/johnotander/ember-cli-weather-icons.svg?branch=master)](https://travis-ci.org/johnotander/ember-cli-weather-icons)
 
 An [ember-cli](http://ember-cli.com) addon for
 [Erik Flowers' weather icons](https://github.com/erikflowers/weather-icons).
 
 ## Installation
+
+For Ember CLI 0.15 or newer:
+
+```
+ember install:addone ember-cli-weather-icons
+```
+
+For Ember CLI 0.14 or older:
 
 ```
 npm install --save ember-cli-weather-icons
