@@ -17,6 +17,7 @@ module.exports = {
     this.app.import(app.bowerDirectory + '/weather-icons/font/weathericons-regular-webfont.svg',  { destDir: 'font' });
     this.app.import(app.bowerDirectory + '/weather-icons/font/weathericons-regular-webfont.ttf',  { destDir: 'font' });
     this.app.import(app.bowerDirectory + '/weather-icons/font/weathericons-regular-webfont.woff', { destDir: 'font' });
+    this.app.import(app.bowerDirectory + '/weather-icons/font/weathericons-regular-webfont.woff2', { destDir: 'font' });
     this.app.import(app.bowerDirectory + '/weather-icons/font/WeatherIcons-Regular.otf', { destDir: 'font' });
   }
 };
