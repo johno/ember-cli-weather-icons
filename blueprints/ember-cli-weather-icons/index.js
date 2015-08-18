@@ -4,6 +4,6 @@ module.exports = {
   normalizeEntityName: function() {},
 
   afterInstall: function() {
-    return this.addBowerPackageToProject('weather-icons', '~1.3.2');
+    return this.addBowerPackageToProject('weather-icons', '~2.0.1');
   }
 };
