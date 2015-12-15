@@ -1,4 +1,4 @@
-# ember-cli-weather-icons [![Build Status](https://travis-ci.org/johnotander/ember-cli-weather-icons.svg?branch=master)](https://travis-ci.org/johnotander/ember-cli-weather-icons)
+# ember-cli-weather-icons [![Build Status](https://travis-ci.org/johnotander/ember-cli-weather-icons.svg?branch=master)](https://travis-ci.org/johnotander/ember-cli-weather-icons) [![Ember Observer Score](http://emberobserver.com/badges/ember-cli-weather-icons.svg)](http://emberobserver.com/addons/ember-cli-weather-icons)
 
 An [ember-cli](http://ember-cli.com) addon for [Erik Flowers' weather icons](https://github.com/erikflowers/weather-icons).
 
