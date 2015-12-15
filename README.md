@@ -11,7 +11,8 @@ ember install ember-cli-weather-icons
 ## Usage
 
 ```hbs
-{{weather-icon this.weather}}
+{{weather-icon name=this.weather}}
+{{weather-icon name="day-sunny"}}
 ```
 
 ## License
