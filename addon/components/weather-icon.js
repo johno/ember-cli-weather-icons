@@ -1,13 +1,13 @@
-import Ember from 'ember';
+import { computed } from '@ember/object';
+import Component from '@ember/component';
 import layout from '../templates/components/weather-icon';
 
-export default Ember.Component.extend({
+export default Component.extend({
   tagName: 'i',
   classNameBindings: ['prefixedClass'],
-  layout: layout,
+  layout,
 
-  prefixedClass: Ember.computed('name', function () {
+  prefixedClass: computed('name', function () {
     return 'wi wi-' + this.get('name');
   })
 });
-
