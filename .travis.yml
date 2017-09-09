@@ -37,7 +37,7 @@ script:
 jobs:
   include:
     - stage: NPM release
-      node_js: ""
+      node_js: "4"
       deploy:
         provider: npm
         email: uni_que@me.com
