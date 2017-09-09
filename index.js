@@ -1,22 +1,39 @@
+/* eslint-env node */
 'use strict';
 
-var path = require('path');
+const BroccoliPostCSS = require('broccoli-postcss');
 
 module.exports = {
   name: 'ember-cli-weather-icons',
-
-  blueprintsPath: function() {
-    return path.join(__dirname, 'blueprints');
+  options: {
+    nodeAssets: {
+      'weather-icons': {
+        vendor: {
+          include: ['css/weather-icons.css', 'css/weather-icons-wind.css'],
+          processTree(input) {
+            return new BroccoliPostCSS(input, {
+              plugins: [{
+                module: require('postcss-url'),
+                options: {
+                  url(originalUrl) {
+                    return originalUrl.url.replace(/^\.\.\/font/, '../fonts');
+                  },
+                },
+              }],
+            });
+          },
+        },
+        public: {
+          srcDir: 'font',
+          destDir: './fonts',
+          include: ['*'],
+        },
+      },
+    },
   },
-
-  included: function(app) {
+  included(app) {
     this._super.included(app);
-
-    this.app.import(app.bowerDirectory + '/weather-icons/css/weather-icons.css');
-    this.app.import(app.bowerDirectory + '/weather-icons/font/weathericons-regular-webfont.eot',  { destDir: 'font' });
-    this.app.import(app.bowerDirectory + '/weather-icons/font/weathericons-regular-webfont.svg',  { destDir: 'font' });
-    this.app.import(app.bowerDirectory + '/weather-icons/font/weathericons-regular-webfont.ttf',  { destDir: 'font' });
-    this.app.import(app.bowerDirectory + '/weather-icons/font/weathericons-regular-webfont.woff', { destDir: 'font' });
-    this.app.import(app.bowerDirectory + '/weather-icons/font/weathericons-regular-webfont.woff2', { destDir: 'font' });
+    app.import('vendor/weather-icons/css/weather-icons.css');
+    app.import('vendor/weather-icons/css/weather-icons-wind.css');
   }
 };
