@@ -55,7 +55,6 @@ jobs:
           secure: GLADj68+i4cWXZ9zOjBeB3F7g/7CcvS0wysxv1Ag3MWXtq7MzCVTE8oFqPxqoVLQ414yWP1vCJrz+4ndiKM47RJfa6JifJIp/6iglfuHe+Y2ztdbLQ4J3swPF7IcRn4GVDblq1mgsA7vruKiwXzAB4tzjOnXmwwlFgQgnlOJ9rk=
         on:
           tags: true
-          repo: johnotander/ember-cli-weather-icons
 
 before_install:
   - npm config set spin false
