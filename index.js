@@ -1,10 +1,9 @@
-/* eslint-env node */
 'use strict';
 
 const BroccoliPostCSS = require('broccoli-postcss');
 
 module.exports = {
-  name: 'ember-cli-weather-icons',
+  name: require('./package').name,
   options: {
     nodeAssets: {
       'weather-icons': {
